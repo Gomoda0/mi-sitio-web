@@ -8,7 +8,7 @@ html {
 
 }
 body {
-    padding: 20px;
+    padding: 20px 25px;
 }
 
 h1, h2 {
@@ -22,13 +22,13 @@ a {
  a:hover, a:focus{
     color: #b5604f;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 2px 5px;
-    border-radius: 4px;
+ 
+    border-radius: 10px;
  }
 
  p {
     color: #f5f5f5;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin-bottom:  1rem;
  }
@@ -39,6 +39,7 @@ a {
     align-items: center;
     padding: 1rem;
     background-color: #600000;
+    border-radius: 20px;
  }
 
  .header-nav h1{
@@ -68,6 +69,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 10px;
  }
 
  .perfil-container section {
@@ -79,14 +81,31 @@ a {
     width: 70%;
     display: block;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 20px;
  
  }
 
  .proyectos-container{
-    
+    border: solid whitesmoke;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
  }
 
+.proyectos-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+.proyectos-container ul li{
+    display: inline-flex;
+    padding: 10px;
+}
+ 
 .roboto-flex-400 {
     font-family: "Roboto Flex", sans-serif;
     font-optical-sizing: auto;
