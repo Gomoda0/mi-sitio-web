@@ -1,35 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="David Gómez Morales">
     <title>Contacto Dave Gómez</title>
 </head>
+
 <body>
-    <section>
-        <h1>Vías de contacto</h1>
+    <section role="region" aria-labelledby="contacto-email">
+        <h1 id="contacto-email">Vías de contacto</h1>
         <h2>Mediante correo electrónico</h2>
         <p>Comparte tus comentarios al correo:</p>
         <p>
-           <a href="mailto:dave.gomot@mok.com"> dave.gomor@mok.com</a>
+            <a href="mailto:dave.gomot@mok.com"> dave.gomor@mok.com</a>
         </p>
-        
+
     </section>
-    <section>
-        <h2>Dejanos tus datos</h2>
-        <form action="" method="post">
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="Nombre" readonly>
-            <br>
-            <label for="movil">Movil</label>
-            <input id="movil" name="movil" type="number" required> 
-            <br>
-            <label for="correo">eMail</label>
-            <input type="email" name="email" id="correo" required>
+    <section role="region" aria-labelledby="contacto-form">
+        <h2 id="contacto-form">Dejanos tus datos</h2>
+        <form action="" method="post" aria-live="polite">
+            <fieldset>
+                <legend> Informacion del contacto</legend>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="nombre"  aria-required="true" aria-describedby="nombre-info">
+                <small id="nombre-info">Por favor, ingresa tu nombre,</small>
+                <br>
+                <label for="movil">Movil</label>
+                <input id="movil" name="movil" type="tel"  aria-required="true">
+                <br>
+                <label for="correo">eMail</label>
+                <input type="email" name="email" id="correo"  aria-required="true">
+                <br>
+                <button type="submit" id="submitButton" aria-label="Enviar formulario" >Enviar datos</button>
+
+            </fieldset>
+          
 
         </form>
     </section>
-    
+<script src="./validacionesContacto.js"></script>
 </body>
+
 </html>
