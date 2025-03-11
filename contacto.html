@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="David Gómez Morales">
     <title>Contacto Dave Gómez</title>
+    <link href="./contacto.css" rel="stylesheet">
 </head>
 
 <body>
@@ -24,14 +25,14 @@
             <fieldset>
                 <legend> Informacion del contacto</legend>
                 <label for="name">Nombre</label>
-                <input type="text" id="name" name="nombre"  aria-required="true" aria-describedby="nombre-info">
+                <input type="text" id="name" name="nombre"  aria-required="true" aria-describedby="nombre-info" required>
                 <small id="nombre-info">Por favor, ingresa tu nombre,</small>
                 <br>
                 <label for="movil">Movil</label>
-                <input id="movil" name="movil" type="tel"  aria-required="true">
+                <input id="movil" name="movil" type="tel"  aria-required="true" required>
                 <br>
                 <label for="correo">eMail</label>
-                <input type="email" name="email" id="correo"  aria-required="true">
+                <input type="email" name="email" id="correo"  aria-required="true" required>
                 <br>
                 <button type="submit" id="submitButton" aria-label="Enviar formulario" >Enviar datos</button>
 
