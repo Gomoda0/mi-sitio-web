@@ -1,4 +1,5 @@
 body {
+    margin: 15px;
     font-family:  Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -48,16 +49,18 @@ fieldset{
     padding: 30px ;
     border-radius: 30px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
 label {
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-top: 20px;
     display: block;
 }
 
 input {
-    width: 100%;
+    width: 80%;
+    max-width: 400px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -71,3 +74,21 @@ input:focus {
     box-shadow: 0 0 5px rgba(178, 34, 34, 0.5);
 }
 
+button {
+
+    margin: 20px;
+    border: 1px solid #0000;
+    border-radius: 20px;
+    text-decoration: none;
+    box-shadow: 1px 5px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    margin-top: 5px;
+    color: #000;
+    box-shadow: 0px 0px;
+}
